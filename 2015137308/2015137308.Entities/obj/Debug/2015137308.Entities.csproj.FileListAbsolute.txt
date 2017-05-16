@@ -1,0 +1,5 @@
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Entities\bin\Debug\2015137308.Entities.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Entities\bin\Debug\2015137308.Entities.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Entities\obj\Debug\2015137308.Entities.csprojResolveAssemblyReference.cache
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Entities\obj\Debug\2015137308.Entities.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Entities\obj\Debug\2015137308.Entities.pdb

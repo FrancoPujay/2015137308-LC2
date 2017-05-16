@@ -1,0 +1,12 @@
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.ConsoleApp.exe.config
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.ConsoleApp.exe
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.ConsoleApp.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.Entities.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.Persistence.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\EntityFramework.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.Entities.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\2015137308.Persistence.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\bin\Debug\EntityFramework.xml
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\obj\Debug\2015137308.ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\obj\Debug\2015137308.ConsoleApp.exe
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.ConsoleApp\obj\Debug\2015137308.ConsoleApp.pdb

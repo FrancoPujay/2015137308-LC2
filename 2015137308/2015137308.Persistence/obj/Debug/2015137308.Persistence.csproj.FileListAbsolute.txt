@@ -1,0 +1,15 @@
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\2015137308.Persistence.dll.config
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\2015137308.Persistence.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\2015137308.Persistence.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\2015137308.Entities.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\2015137308.Entities.pdb
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\2015137308.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\_2015137308.Persistence.Migrations.One.resources
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\_2015137308.Persistence.Migrations.Two.resources
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\2015137308.Persistence.csproj.GenerateResource.Cache
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\2015137308.Persistence.dll
+C:\Users\R-Five\Documents\Visual Studio 2015\Projects\2015137308\2015137308.Persistence\obj\Debug\2015137308.Persistence.pdb
