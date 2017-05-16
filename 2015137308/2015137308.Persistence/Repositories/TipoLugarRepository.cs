@@ -10,7 +10,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class TipoLugarRepository : Repository<TipoLugar>, ITipoLugarRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public TipoLugarRepository(_2015137308DbContext _Context)
         {

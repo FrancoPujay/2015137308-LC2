@@ -16,5 +16,7 @@ namespace _2015137308.Entities.Entities
         public LugarViaje LugarViaje { get; set; }
         public List<Venta> Ventas { get; set; }
         public Bus Bus { get; set; }
+        public virtual void Service() { }
     }
+    
 }

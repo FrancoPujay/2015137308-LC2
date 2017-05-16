@@ -10,7 +10,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class TipoPagoRepository : Repository<TipoPago>, ITipoPagoRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public TipoPagoRepository(_2015137308DbContext _Context)
         {

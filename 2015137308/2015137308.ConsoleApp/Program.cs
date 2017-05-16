@@ -10,10 +10,18 @@ namespace _2015137308.ConsoleApp
 {
     class Program
     {
+        
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Implementación según necesidades...");
+            var Transporte = new Transporte();
+            Transporte.Service();
+            var Encomienda = new Encomienda();
+            Encomienda.Service();
             Console.ReadLine();
         }
+       
+       
+
     }
 }

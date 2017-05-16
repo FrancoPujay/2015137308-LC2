@@ -11,7 +11,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class VentaRepository : Repository<Venta>, IVentaRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public VentaRepository(_2015137308DbContext _Context)
         {

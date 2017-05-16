@@ -11,7 +11,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class TipoViajeRepository : Repository<TipoViaje>, ITipoViajeRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public TipoViajeRepository(_2015137308DbContext _Context)
         {

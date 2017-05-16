@@ -10,7 +10,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class LugarViajeRepository : Repository<LugarViaje>, ILugarViajeRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public LugarViajeRepository(_2015137308DbContext _Context)
         {

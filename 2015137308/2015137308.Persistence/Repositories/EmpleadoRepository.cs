@@ -10,7 +10,7 @@ namespace _2015137308.Persistence.Repositories
 {
     public class EmpleadoRepository : Repository<Empleado>, IEmpleadoRepository
     {
-        private _2015137308DbContext _Context;
+        private readonly _2015137308DbContext _Context;
 
         public EmpleadoRepository(_2015137308DbContext _Context)
         {
