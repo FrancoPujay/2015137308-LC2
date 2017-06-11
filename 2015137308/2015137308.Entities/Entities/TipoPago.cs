@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace _2015137308.Entities.Entities
 {
-    public class TipoPago
+    public enum TipoPago
     {
-        public int TipoPagoId { get; set; }
-        public string Descripcion { get; set; }
-        public List<Venta> Ventas { get; set; }
+       Efectivo=0,
+       Visa=1,
+       Paypal=2,
+       MasterCard=3,
     }
 }

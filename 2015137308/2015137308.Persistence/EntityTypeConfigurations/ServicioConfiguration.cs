@@ -1,6 +1,7 @@
 ﻿using _2015137308.Entities.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
@@ -16,26 +17,25 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
             ToTable("Servicios");
 
             HasKey(c => c.ServicioId);
-
-            Property(c => c.Tipo)
-                .IsRequired()
-                .HasMaxLength(255);
+            Property(a => a.ServicioId)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+           
 
             //Relationship Configurations
-            Map<Encomienda>(m => m.Requires("Tipo").HasValue("Administrativo"));
-            Map<Transporte>(m => m.Requires("Tipo").HasValue("Tripulacion"));
+            Map<Encomienda>(m => m.Requires("Discriminator").HasValue("Encomienda"));
+            Map<Transporte>(m => m.Requires("Discriminator").HasValue("Transporte"));
 
-            HasRequired(c => c.LugarViaje)
-                .WithMany(c => c.Servicios);
+            HasRequired(t => t.LugarViaje)
+                .WithMany(t => t.Servicios)
+                .HasForeignKey(t => t.LugarViajeId);
 
-            HasRequired(c => c.Bus)
-                .WithMany(c => c.Servicios);
+            HasRequired(e => e.Bus)
+                .WithMany(e => e.Servicios)
+                .HasForeignKey(e => e.BusId);
 
-            HasOptional(c => c.Cliente)
-               .WithMany(c => c.Servicios);
+            HasRequired(r => r.Venta)
+                .WithRequiredPrincipal(r => r.Servicio);
 
-            HasOptional(c => c.TipoViaje)
-               .WithMany(c => c.Servicios);
         }
     }
 }

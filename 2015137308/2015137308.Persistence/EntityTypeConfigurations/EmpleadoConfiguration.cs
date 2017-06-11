@@ -23,11 +23,7 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
             Map<Administrativo>(m => m.Requires("Discriminator").HasValue("Administrativo"));
             Map<Tripulacion>(m => m.Requires("Discriminator").HasValue("Tripulacion"));
 
-            HasRequired(c => c.TipoTripulacion)
-                .WithRequiredPrincipal(c => c.Empleado);
-
-            HasOptional(c => c.Bus)
-                .WithMany(c => c.Empleados);
+            
         }
     }
 }

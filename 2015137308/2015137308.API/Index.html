@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <center>
+        <div><h1>Agregar Cliente</h1></div>
+        Dni:&#160&#160&#160&#160&#160&#160&#160&#160&#160 <input type="text" id="dni_data" size="20" /><br />
+        Nombres:   <input type="text" id="nombres_data" size="20" /><br />
+        Apellidos: <input type="text" id="apellidos_data" size="20" /><br />
+        <input type="button" onclick="create_cliente()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Bus</h1></div>
+        Placa:   <input type="text" id="placa_data" size="20" /><br />
+        <input type="button" onclick="create_bus()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Administrativo</h1></div>
+        Area:   <input type="text" id="area_data" size="20" /><br />
+        Cargo: <input type="text" id="cargo_data" size="20" /><br />
+        <input type="button" onclick="create_administrativo()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Encomienda</h1></div>
+        Descripcion: <input type="text" id="descripcion_data" size="20" /><br />
+        <input type="button" onclick="create_encomienda()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Transporte</h1></div>
+        ClienteId:   <input type="text" id="clienteid_data" size="20" /><br />
+        <input type="button" onclick="create_transporte()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Tripulacion</h1></div>
+        TipoTripulacion:   <input type="text" id="tipotripulacion_data" size="20" /><br />
+        <input type="button" onclick="create_tripulacion()" value="Crear" />
+    </center>
+    <center>
+        <div><h1>Agregar Venta</h1></div>
+        EmpleadoId:   <input type="text" id="empleadoid_data" size="20" /><br />
+        ClienteId:   <input type="text" id="clienteid_data" size="20" /><br />
+        <input type="button" onclick="create_venta()" value="Crear" />
+    </center>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script>
+        function create_cliente()
+        {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "")
+            {
+                var ClienteDTO = [
+                    ClienteId=1,
+                    Dni=dni,
+                    Nombres=nombres,
+                    Apellidos=apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else
+            {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_bus() {
+            var placa = $('#placa_data').val();
+            if (placa != "") {
+                var BusDTO = [
+                    BusId = 1,
+                    Placa = placa,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_administrativo() {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "") {
+                var ClienteDTO = [
+                    ClienteId = 1,
+                    Dni = dni,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_encomienda() {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "") {
+                var ClienteDTO = [
+                    ClienteId = 1,
+                    Dni = dni,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_transporte() {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "") {
+                var ClienteDTO = [
+                    ClienteId = 1,
+                    Dni = dni,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_tripulacion() {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "") {
+                var ClienteDTO = [
+                    ClienteId = 1,
+                    Dni = dni,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+        function create_venta() {
+            var dni = $('#dni_data').val();
+            var nombres = $('#nombres_data').val();
+            var apellidos = $('#apellidos_data').val();
+            if (dni != "" && nombres != "" && apellidos != "") {
+                var ClienteDTO = [
+                    ClienteId = 1,
+                    Dni = dni,
+                    Nombres = nombres,
+                    Apellidos = apellidos,
+                ];
+                var jsinfo = JSON.stringify(ClienteDTO);
+                $.ajax({
+                    url: "api/clientes",
+                    cache: false,
+                    type: "PostClienteDTO",
+                    contentType: "application/json",
+                    data: jsinfo,
+                    sucess: function (data) {
+                        alert('Registro guardado con éxito!');
+                        location.reload();
+                    }
+                }).fail(
+                    function (xhr, textStatus, err) {
+                        alert(err);
+                    }
+                    );
+            }
+            else {
+                alert('Rellene todos los campos');
+            }
+        }
+    </script>
+</body>
+</html>

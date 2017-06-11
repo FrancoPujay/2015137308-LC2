@@ -61,11 +61,6 @@
     <Compile Include="IRepositories\ILugarViajeRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IServicioRepository.cs" />
-    <Compile Include="IRepositories\ITipoComprobanteRepository.cs" />
-    <Compile Include="IRepositories\ITipoLugarRepository.cs" />
-    <Compile Include="IRepositories\ITipoPagoRepository.cs" />
-    <Compile Include="IRepositories\ITipoTripulacionRepository.cs" />
-    <Compile Include="IRepositories\ITipoViajeRepository.cs" />
     <Compile Include="IRepositories\IVentaRepository.cs" />
     <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -50,24 +50,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2015137308DbContext.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoLugarConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\LugarViajeConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\ClienteConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoViajeConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\ServicioConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoPagoConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoComprobanteConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\BusConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\EmpleadoConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoTripulacionConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\VentaConfiguration.cs" />
-    <Compile Include="Migrations\201705160008554_One.cs" />
-    <Compile Include="Migrations\201705160008554_One.Designer.cs">
-      <DependentUpon>201705160008554_One.cs</DependentUpon>
+    <Compile Include="Migrations\201706091705539_op.cs" />
+    <Compile Include="Migrations\201706091705539_op.Designer.cs">
+      <DependentUpon>201706091705539_op.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705160037009_Two.cs" />
-    <Compile Include="Migrations\201705160037009_Two.Designer.cs">
-      <DependentUpon>201705160037009_Two.cs</DependentUpon>
+    <Compile Include="Migrations\201706100228468_ninject.cs" />
+    <Compile Include="Migrations\201706100228468_ninject.Designer.cs">
+      <DependentUpon>201706100228468_ninject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706100255410_set.cs" />
+    <Compile Include="Migrations\201706100255410_set.Designer.cs">
+      <DependentUpon>201706100255410_set.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706100308439_cargo_to_string.cs" />
+    <Compile Include="Migrations\201706100308439_cargo_to_string.Designer.cs">
+      <DependentUpon>201706100308439_cargo_to_string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706100343029_alldb.cs" />
+    <Compile Include="Migrations\201706100343029_alldb.Designer.cs">
+      <DependentUpon>201706100343029_alldb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,11 +84,6 @@
     <Compile Include="Repositories\LugarViajeRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\ServicioRepository.cs" />
-    <Compile Include="Repositories\TipoComprobanteRepository.cs" />
-    <Compile Include="Repositories\TipoLugarRepository.cs" />
-    <Compile Include="Repositories\TipoPagoRepository.cs" />
-    <Compile Include="Repositories\TipoTripulacionRepository.cs" />
-    <Compile Include="Repositories\TipoViajeRepository.cs" />
     <Compile Include="Repositories\UnityOfWork.cs" />
     <Compile Include="Repositories\VentaRepository.cs" />
   </ItemGroup>
@@ -98,11 +100,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705160008554_One.resx">
-      <DependentUpon>201705160008554_One.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706091705539_op.resx">
+      <DependentUpon>201706091705539_op.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201705160037009_Two.resx">
-      <DependentUpon>201705160037009_Two.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706100228468_ninject.resx">
+      <DependentUpon>201706100228468_ninject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706100255410_set.resx">
+      <DependentUpon>201706100255410_set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706100308439_cargo_to_string.resx">
+      <DependentUpon>201706100308439_cargo_to_string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706100343029_alldb.resx">
+      <DependentUpon>201706100343029_alldb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,12 +13,8 @@ namespace _2015137308.Entities.IRepositories
         IEmpleadoRepository Empleados { get; }
         ILugarViajeRepository LugarViajes { get; }
         IServicioRepository Servicios { get; }
-        ITipoComprobanteRepository TipoComprobantes { get; }
-        ITipoLugarRepository TipoLugares { get; }
-        ITipoPagoRepository TipoPagos { get; }
-        ITipoTripulacionRepository TipoTripulaciones { get; }
-        ITipoViajeRepository TipoViajes { get; }
         IVentaRepository Ventas { get; }
+        void StateModified(object entity);
         int SaveChanges();
  
     }

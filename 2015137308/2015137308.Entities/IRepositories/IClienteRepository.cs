@@ -9,8 +9,6 @@ namespace _2015137308.Entities.IRepositories
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-        IEnumerable<Cliente> GetClienteByVenta(Venta venta);
-
-        IEnumerable<Cliente> GetClienteByServicio(Servicio servicio);
+        
     }
 }

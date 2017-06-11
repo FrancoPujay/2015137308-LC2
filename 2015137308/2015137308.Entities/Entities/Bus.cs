@@ -10,20 +10,9 @@ namespace _2015137308.Entities.Entities
     {
         public int BusId { get; set; }
         public string Placa { get; set; }
-        public List<Empleado> Empleados { get; set; }
+        public List<Tripulacion> Tripulaciones { get; set; }
         public List<Servicio> Servicios { get; set; }
+       
 
-
-        public Bus()
-        {
-
-        }
-
-        public Bus(List<Empleado> empleados)
-        {
-            Empleados =empleados;
-        }
-
-        
     }
 }

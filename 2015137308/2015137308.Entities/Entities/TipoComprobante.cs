@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2015137308.Entities.Entities
 {
-    public class TipoComprobante
+    public enum TipoComprobante
     {
-        public int TipoComprobanteId { get; set; }
-        public string Descripcion { get; set; }
-        public List<Venta> Ventas { get; set; }
+        Factura=0,
+        Boleta=1,
+        Ticket=2,
     }
 }

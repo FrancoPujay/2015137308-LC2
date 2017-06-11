@@ -9,8 +9,6 @@ namespace _2015137308.Entities.IRepositories
 {
     public interface IBusRepository : IRepository<Bus>
     {
-        IEnumerable<Bus> GetBusByEmpleado(Empleado empleado);
-
-        IEnumerable<Bus> GetBusWithServicio(Servicio Servicio);
+       
     }
 }

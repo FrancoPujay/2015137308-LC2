@@ -18,6 +18,10 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
             Property(c => c.Placa)
                 .IsRequired()
                 .HasMaxLength(255);
+            HasMany(t => t.Tripulaciones)
+                .WithRequired(t => t.Bus)
+                .HasForeignKey(t => t.BusId);
+            
             
         }
     }

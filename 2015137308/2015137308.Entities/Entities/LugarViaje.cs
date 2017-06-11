@@ -12,9 +12,6 @@ namespace _2015137308.Entities.Entities
         public string Descripcion { get; set; }
         public TipoLugar TipoLugar { get; set; }
         public List<Servicio> Servicios { get; set; }
-        public LugarViaje()
-        {
-            TipoLugar = new TipoLugar();
-        }
+
     }    
 }

@@ -9,10 +9,11 @@ namespace _2015137308.Entities.Entities
     public class Cliente
     {
         public int ClienteId { get; set; }
+        public string Dni { get; set; }
         public string Nombres { get;  set; }
         public string Apellidos { get;  set; }
         public List<Venta> Ventas { get; set; }
-        public List<Servicio> Servicios { get; set; }
+        public List<Transporte> Transportes { get; set; }
 
     }
 }

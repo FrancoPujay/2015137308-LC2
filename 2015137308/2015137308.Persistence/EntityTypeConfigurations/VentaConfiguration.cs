@@ -14,16 +14,16 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
         {
             ToTable("Ventas");
             HasKey(c => c.VentaId);
-            HasRequired(c => c.TipoComprobante)
-                .WithMany(c => c.Ventas);
-            HasRequired(c => c.TipoPago)
-                .WithMany(c => c.Ventas);
+            
             HasRequired(c => c.Administrativo)
-              .WithMany(c => c.Ventas).HasForeignKey(c => c.EmpleadoId);
-            HasRequired(c => c.Servicio)
-                .WithMany(c => c.Ventas);
+              .WithMany(c => c.Ventas).
+              HasForeignKey(c => c.EmpleadoId);
+
+            
+
             HasRequired(c => c.Cliente)
-                .WithMany(c => c.Ventas);
+                .WithMany(c => c.Ventas)
+                .HasForeignKey(c => c.ClienteId);
         }
     }
 }

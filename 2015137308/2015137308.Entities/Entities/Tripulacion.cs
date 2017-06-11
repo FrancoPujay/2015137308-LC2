@@ -9,11 +9,7 @@ namespace _2015137308.Entities.Entities
     public class Tripulacion : Empleado
     {
         public int BusId { get; set; }
-        public int TipoTripulacionId { get; set; }
-        
-        public Tripulacion()
-        {
-            TipoTripulacion = new TipoTripulacion();
-        }
+        public TipoTripulacion TipoTripulacion { get; set; }
+        public Bus  Bus { get; set; }
     }
 }

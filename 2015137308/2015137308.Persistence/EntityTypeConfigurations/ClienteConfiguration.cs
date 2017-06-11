@@ -18,6 +18,10 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
             Property(c => c.Apellidos)
                 .IsRequired()
                 .HasMaxLength(255);
+            HasMany(t => t.Transportes)
+                .WithRequired(t => t.Cliente)
+                .HasForeignKey(t => t.ClienteId);
+                
         }
     }
 }

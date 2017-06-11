@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2015137308.Entities.Entities
 {
-    public class TipoTripulacion
+    public enum TipoTripulacion
     {
-        public int TipoTripulacionId { get; set; }
-        public string Descripcion { get; set; }
-        public Empleado Empleado { get; set; }
-        
-
+       Terramozo=0,
+       Cabina=1,
+       Auxiliar=2,
     }
 }

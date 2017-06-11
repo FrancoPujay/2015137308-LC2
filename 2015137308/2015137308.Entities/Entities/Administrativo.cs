@@ -9,7 +9,7 @@ namespace _2015137308.Entities.Entities
     public class Administrativo : Empleado
     {
         public string Area { get; set; }
-        public int Cargo { get; set; }
+        public string Cargo { get; set; }
         public List<Venta> Ventas { get; set; }
     }
 }

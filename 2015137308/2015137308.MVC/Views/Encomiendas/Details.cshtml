@@ -1,0 +1,51 @@
+﻿@model _2015137308.Entities.Entities.Encomienda
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Encomienda</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bus.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bus.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LugarViaje.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LugarViaje.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beneficiario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beneficiario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServicioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

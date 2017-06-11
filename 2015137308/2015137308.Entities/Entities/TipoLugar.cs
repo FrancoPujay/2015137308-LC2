@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2015137308.Entities.Entities
 {
-    public class TipoLugar
+    public enum TipoLugar
     {
-        public int TipoLugarId { get; set; }
-        public string Descripcion { get; set; }
+        Costa=0,
+        Sierra=1,
+        Selva=2,
     }
 }

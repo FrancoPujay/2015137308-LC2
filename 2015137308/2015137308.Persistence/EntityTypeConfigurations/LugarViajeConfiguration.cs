@@ -17,7 +17,8 @@ namespace _2015137308.Persistence.EntityTypeConfigurations
             HasKey(c => c.LugarViajeId);
             Property(c => c.Descripcion)
                 .IsRequired()
-                .HasMaxLength(255);     
+                .HasMaxLength(255);
+
         }
     }
 }
